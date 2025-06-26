@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="..\stylesheets\main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8" />
+    <title>Happy Birthday!!</title>
+</head>
+<body>
+
+    <svg id="topBox">
+        <path id="curve" d="M 10, 350 A 250, 100 0 0, 1 960, 350" fill="transparent" />
+
+        <text>
+
+            <textPath href="#curve" startOffset="49.5%">
+                Happy Birthday!!
+            </textPath>
+
+        </text>
+
+    </svg>
+
+    <button id="scrollBtn">
+
+        press to scroll
+
+    </button>
+
+    <div class="gridContainer">
+
+        <div class="item1">
+
+            <div class="polaroidOuter seeThrough" id="photo1">
+
+                <div class="polaroidInner">
+ 
+                    <img id="p1" src ="..\images\20190601_172108.jpg"/> 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4">
+            
+            
+
+            <div class="polaroidOuter rImg seeThrough" id="photo2">
+
+                <div class="polaroidInner">
+
+                    <img id="p2" src ="..\images\20220701_170937.jpg"/> 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item5">
+            
+             
+
+            <div class="polaroidOuter seeThrough" id="photo3">
+
+                <div class="polaroidInner">
+
+                    <img id="p3" src="..\images\Jkjkjhffffj.jpg"/>
+
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">
+            
+             
+
+            <div class="polaroidOuter rImg seeThrough" id="photo4">
+
+                <div class="polaroidInner">
+
+                    <img id="p4" src ="../images/IMG_20250214_230224_800.jpg"/> 
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item9">
+
+            <div class="polaroidOuter seeThrough" id="photo5">
+
+                <div class="polaroidInner">
+
+                    <img id="p5" src="..\images\Screenshot_20201025-190132_Instagram.jpg"/>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="item10">10</div>
+
+    </div>
+
+    <div class="carouselContainer"></div>
+
+</body>
+<script src="..\scripts\script.js"></script>
+</html>
