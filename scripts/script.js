@@ -29,11 +29,11 @@ function autoScrollPage(speed = 1000, delay = 5) {
     //slideshow script
 const photoArray = [
 
-  "../images/Screenshot_20201025-190132_Instagram.jpg", //0
-  "../images/IMG_20200402_172518_555.jpg", //1
-  "../images/20230519_231909.jpg", //2
-  "../images/20220212_172757.jpg", //3
-  "../images/20211205_153706.jpg" //4
+  "images/Screenshot_20201025-190132_Instagram.jpg", //0
+  "images/IMG_20200402_172518_555.jpg", //1
+  "images/20230519_231909.jpg", //2
+  "images/20220212_172757.jpg", //3
+  "images/20211205_153706.jpg" //4
 
 ];
 
