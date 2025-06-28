@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="stylesheets\main.css">
+    <link rel="stylesheet" href="..\stylesheets\main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
@@ -25,19 +25,19 @@
 
     <button id="scrollBtn">
 
-        press to scroll
+        Press Me!!
 
     </button>
 
     <div class="gridContainer">
 
-        <div class="item1">
+        <div class="item1"  >
 
-            <div class="polaroidOuter seeThrough" id="photo1">
+            <div class="polaroidOuter  seeThrough" id="photo1">
 
-                <div class="polaroidInner">
+                <div class="polaroidInner"> 
  
-                    <img id="p1" src ="images\20190601_172108.jpg"/> 
+                    <img id="p1" src ="..\images\20190601_172108.jpg"/> 
 
                 </div>
 
@@ -46,72 +46,94 @@
         </div>
         <div class="item2"></div>
         <div class="item3"></div>
-        <div class="item4">
-            
-            
+        <div class="item4" id="photo2">
 
-            <div class="polaroidOuter rImg seeThrough" id="photo2">
+            <div class="polaroidOuter rImg">
 
                 <div class="polaroidInner">
 
-                    <img id="p2" src ="images\20220701_170937.jpg"/> 
+                    <img id="p2" src ="..\images\20220701_170937.jpg"/> 
 
                 </div>
 
             </div>
 
         </div>
-        <div class="item5">
+        <div class="item5" id="photo3">
             
              
 
-            <div class="polaroidOuter seeThrough" id="photo3">
+            <div class="polaroidOuter">
 
                 <div class="polaroidInner">
 
-                    <img id="p3" src="images\Jkjkjhffffj.jpg"/>
+                    <img id="p3" src="..\images\Jkjkjhffffj.jpg"/>
 
                 </div>
 
             </div>
             
         </div>
-        <div class="item6">6</div>
-        <div class="item7">7</div>
-        <div class="item8">
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8" id="photo4">
             
              
 
-            <div class="polaroidOuter rImg seeThrough" id="photo4">
+            <div class="polaroidOuter rImg">
 
                 <div class="polaroidInner">
 
-                    <img id="p4" src ="images/IMG_20250214_230224_800.jpg"/> 
+                    <img id="p4" src ="../images/IMG_20250214_230224_800.jpg"/> 
 
                 </div>
 
             </div>
 
         </div>
-        <div class="item9">
+        <div class="item9" id="photo5">
 
-            <div class="polaroidOuter seeThrough" id="photo5">
+            <div class="polaroidOuter">
 
                 <div class="polaroidInner">
 
-                    <img id="p5" src="images\Screenshot_20201025-190132_Instagram.jpg"/>
+                    <img id="p5" src="..\images\20230519_221713.jpg"/>
 
                 </div>
 
             </div>
 
         </div>
-        <div class="item10">10</div>
+        <div class="item10"></div>
 
     </div>
 
-    <div class="carouselContainer"></div>
+    <div class="gridContainer" id="slideCont">
+
+        <div class="slide" id="slide1">
+
+            <button id="prevBtn"></button>
+
+        </div>
+        <div class="slide" id="slide2">
+
+            <div class="bigPolaroidOuter">
+
+                <div class="bigPolaroidInner">
+
+                    <img id="polaroidPic" src="../images/IMG_20200402_172518_555.jpg"/>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="slide" id="slide3">
+            <button id="nextBtn"></button>
+        </div>
+
+    </div>
 
 </body>
-<script src="scripts\script.js"></script>
+<script src="..\scripts\script.js"></script>
 </html>

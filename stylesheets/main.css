@@ -9,10 +9,9 @@ html{
 body{
 
   background: #d8f2efcb;
-  height:500vh;
-  width:100vw;
+  height: 400vh;
+  width: 100vw;
   box-shadow: 0 0 200px rgba(248, 192, 234, 0.959) inset;
-
 
 }
 
@@ -38,14 +37,21 @@ textPath{
 
 }
 
-button{
+#scrollBtn{
 
   width: 60vw;
   height:10vh;
-  background-color: green;
+  background-color: rgba(248, 192, 234, 0.692);
   border:none;
   margin: 0vh 20vw;
   font-size: 60px;
+  border-radius: 50px; 
+
+}
+
+button:active{
+
+  background-color: rgba(250, 170, 230, 0.692);
 
 }
 
@@ -55,85 +61,43 @@ button{
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
-  background-color: dodgerblue;
   padding: 10px;
-  padding-top: 30vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 
 }
 
 .gridContainer > div {
-  background-color: #f1f1f1;
+  
   text-align: center;
-  padding: 10px;
   font-size: 30px;
 }
 
 /* start row / start col / end row / end col*/
-.item1{
+.item1{ grid-area: 1 / 1 / 1 / 4; }
 
-  grid-area: 1 / 1 / 1 / 4;
-  place-items: center;
+.item2{ grid-area: 1 / 4 / 1 / 5; }
 
-}
+.item3{ grid-area: 2 / 1 / 2 / 2; }
 
-.item2{
+.item4{  grid-area: 2 / 2 / 2 / 5; }
 
-  grid-area: 1 / 4 / 1 / 5;
+.item5{ grid-area: 3 / 1 / 3 / 4; }
 
-}
+.item6{ grid-area: 3 / 4 / 3 / 5; }
 
-.item3{
+.item7{ grid-area: 4 / 1 / 4 / 2; }
 
-  grid-area: 2 / 1 / 2 / 2;
+.item8{ grid-area: 4 / 2 / 4 / 5; }
 
-}
+.item9{ grid-area: 5 / 1 / 5 / 4; }
 
-.item4{
-
-  grid-area: 2 / 2 / 2 / 5;
-
-}
-
-.item5{
-
-  grid-area: 3 / 1 / 3 / 4;
-
-}
-
-.item6{
-
-  grid-area: 3 / 4 / 3 / 5;
-
-}
-
-.item7{
-
-  grid-area: 4 / 1 / 4 / 2;
-
-}
-
-.item8{
-
-  grid-area: 4 / 2 / 4 / 5;
-
-}
-
-.item9{
-
-  grid-area: 5 / 1 / 5 / 4;
-
-}
-
-.item10{
-
-  grid-area: 5 / 4 / 5 / 5;
-
-}
+.item10{ grid-area: 5 / 4 / 5 / 5; }
 
 /*polaroid styling*/
 .polaroidOuter{
 
-  transform: rotate(25deg);
+  transform: rotate(15deg);
   height: 40vh;
   width: 26.66vh;
   padding-top: 2.5vh;
@@ -157,23 +121,24 @@ button{
 
 .rImg{
 
-  transform: rotate(-25deg);
+  transform: rotate(-15deg);
 
 }
 
 .seeThrough{
 
+  transition: opacity 1s ease-in; 
   opacity: 0;
 
 }
-/*
+
 .visible{
 
-  transition: opacity 1s ease-in, transform 2s ease-in; 
+  transition: opacity 1s ease-in; 
   opacity: 1;
 
 }
-*/
+
 #cont2, #cont4{
 
   flex-direction: row-reverse;
@@ -184,14 +149,91 @@ img{
 
   height: 100%;
   width: 100%;
-  will-change: transform, opacity;
 
 }
 
-#p5, #p3,#p1, #p2, #p4{
+#p5, #p3, #p1, #p2, #p4{
 
   width: 100%;
   height: 90%;
   margin-top: 7%;
 
 }
+
+/*slideshow Styling*/
+#slide1{
+
+grid-area: 1 / 1 / 1 / 2;
+
+}
+
+#slide2{
+
+grid-area: 1 / 2 / 1 / 6;
+
+
+}
+
+#slide3{
+
+grid-area: 1 / 6 / 1 / 7;
+
+
+}
+
+#slideCont{
+
+  height: 55vh;
+  padding: 5vh 0vh 0vh 0vh;
+
+}
+
+.bigPolaroidOuter{
+
+  background-color: white;
+  width: 95%;
+  height: 95%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 1.25%;
+  border-radius: 25px;
+
+}
+
+.bigPolaroidInner{
+
+  height: 60%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: black;
+  border-radius: 25px;
+
+}
+
+#polaroidPic{
+
+height: 31.25vh;
+width: 55vw;;
+
+}
+#nextBtn, #prevBtn{
+
+  height: 55vh;
+  width:100%;
+  background-color: rgba(248, 192, 234, 0.692);
+  border:none;
+  border-radius: 25px;
+
+}
+
+#polaroidPic.concert{
+
+height: 28vh;
+width: 55vw;
+padding-top: 5%;
+
+}
+
